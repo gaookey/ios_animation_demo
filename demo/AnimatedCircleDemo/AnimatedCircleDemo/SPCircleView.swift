@@ -29,7 +29,7 @@ enum MovingPoint {
     case POINT_B
 }
 
-let outsideRectSize: CGFloat = 100
+let outsideRectSize: CGFloat = 90
 
 class CircleLayer: CALayer {
     
@@ -109,6 +109,7 @@ class CircleLayer: CALayer {
         ctx.addPath(ovalPath.cgPath)
         ctx.setStrokeColor(UIColor.cyan.cgColor)
         ctx.setFillColor(UIColor.red.cgColor)
+        ctx.setLineDash(phase: 0, lengths: [])
         //同时给线条和线条包围的内部区域填充颜色
         ctx.drawPath(using: .fillStroke)
         
