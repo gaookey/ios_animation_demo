@@ -144,11 +144,11 @@ extension CuteView {
         x2 = frontView.center.x
         y2 = frontView.center.y
         
-        pointA = CGPoint(x: x1 - r1, y: y1);   // A
+        pointA = CGPoint(x: x1 - r1, y: y1);  // A
         pointB = CGPoint(x: x1 + r1, y: y1);  // B
         pointD = CGPoint(x: x2 - r2, y: y2);  // D
         pointC = CGPoint(x: x2 + r2, y: y2);  // C
-        pointO = CGPoint(x: x1 - r1, y: y1);   // O
+        pointO = CGPoint(x: x1 - r1, y: y1);  // O
         pointP = CGPoint(x: x2 + r2, y: y2);  // P
         
         oldBackViewFrame = backView.frame
@@ -166,7 +166,7 @@ extension CuteView {
         let dragPoint = tap.location(in: containerView)
         if tap.state == .began {
             // 不给r1赋初始值的话，如果第一次拖动使得r1少于6，第二次拖动就直接隐藏绘制路径了
-            r1 = oldBackViewFrame.width / 2
+            r1 = oldBackViewFrame.width * 0.5
             backView.isHidden = false
             fillColorForCute = bubbleOptions.bubbleColor
             removeAniamtionLikeGameCenterBubble()
@@ -190,7 +190,6 @@ extension CuteView {
             } completion: { (finish) in
                 self.addAniamtionLikeGameCenterBubble()
             }
-            
         }
     }
 }
