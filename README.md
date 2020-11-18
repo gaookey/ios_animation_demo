@@ -8,5 +8,5 @@ iOS 动画 demo
 
 
 
-源代码地址：[A-GUIDE-TO-iOS-ANIMATION](https://github.com/KittenYang/A-GUIDE-TO-iOS-ANIMATION)
+原代码地址：[A-GUIDE-TO-iOS-ANIMATION](https://github.com/KittenYang/A-GUIDE-TO-iOS-ANIMATION)
 
