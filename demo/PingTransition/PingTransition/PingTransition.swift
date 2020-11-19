@@ -23,13 +23,11 @@ extension PingTransition: UIViewControllerAnimatedTransitioning, CAAnimationDele
         
         let fromVC = transitionContext.viewController(forKey: .from) as! ViewController
         let toVC = transitionContext.viewController(forKey: .to) as! SecondViewController
-        let contentView = transitionContext.containerView
         
         let button = fromVC.button
         
-        let maskStartPath = UIBezierPath(ovalIn: button.frame)
-        contentView.addSubview(fromVC.view)
-        contentView.addSubview(toVC.view)
+        transitionContext.containerView.addSubview(fromVC.view)
+        transitionContext.containerView.addSubview(toVC.view)
         
         var finalPoint = CGPoint()
         if button.frame.origin.x > toVC.view.bounds.width * 0.5 {
@@ -47,19 +45,20 @@ extension PingTransition: UIViewControllerAnimatedTransitioning, CAAnimationDele
         }
         
         let radius = sqrt((finalPoint.x * finalPoint.x) + (finalPoint.y * finalPoint.y))
-        let maskFinalPath = UIBezierPath(ovalIn: button.frame.insetBy(dx: -radius, dy: -radius))
+        let finalPath = UIBezierPath(ovalIn: button.frame.insetBy(dx: -radius, dy: -radius))
+        let startPath = UIBezierPath(ovalIn: button.frame)
         
         let maskLayer = CAShapeLayer()
-        maskLayer.path = maskFinalPath.cgPath
+        maskLayer.path = finalPath.cgPath
         toVC.view.layer.mask = maskLayer
         
-        let maskLayerAnimation = CABasicAnimation(keyPath: "path")
-        maskLayerAnimation.fromValue = maskStartPath.cgPath
-        maskLayerAnimation.toValue = maskFinalPath.cgPath
-        maskLayerAnimation.duration = transitionDuration(using: transitionContext)
-        maskLayerAnimation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
-        maskLayerAnimation.delegate = self
-        maskLayer.add(maskLayerAnimation, forKey: "path")
+        let animation = CABasicAnimation(keyPath: "path")
+        animation.fromValue = startPath.cgPath
+        animation.toValue = finalPath.cgPath
+        animation.duration = transitionDuration(using: transitionContext)
+        animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+        animation.delegate = self
+        maskLayer.add(animation, forKey: "path")
     }
     
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {

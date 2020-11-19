@@ -23,43 +23,42 @@ extension PingInvertTransition: UIViewControllerAnimatedTransitioning, CAAnimati
         
         let fromVC = transitionContext.viewController(forKey: .from) as! SecondViewController
         let toVC = transitionContext.viewController(forKey: .to) as! ViewController
-        let contentView = transitionContext.containerView
         
-        let buttpn = toVC.button
+        let button = toVC.button
         
-        contentView.addSubview(toVC.view)
-        contentView.addSubview(fromVC.view)
+        transitionContext.containerView.addSubview(toVC.view)
+        transitionContext.containerView.addSubview(fromVC.view)
         
-        let finalPath = UIBezierPath(ovalIn: buttpn.frame)
         var finalPoint = CGPoint()
-        if buttpn.frame.origin.x > toVC.view.bounds.width * 0.5 {
-            if buttpn.frame.origin.y < toVC.view.bounds.height * 0.5 {
-                finalPoint = CGPoint(x: buttpn.center.x - 0, y: buttpn.center.y - toVC.view.bounds.height + 30)
+        if button.frame.origin.x > toVC.view.bounds.width * 0.5 {
+            if button.frame.origin.y < toVC.view.bounds.height * 0.5 {
+                finalPoint = CGPoint(x: button.center.x - 0, y: button.center.y - toVC.view.bounds.height + 30)
             } else {
-                finalPoint = CGPoint(x: buttpn.center.x - 0, y: buttpn.center.y - 0)
+                finalPoint = CGPoint(x: button.center.x - 0, y: button.center.y - 0)
             }
         } else {
-            if buttpn.frame.origin.y < toVC.view.bounds.height * 0.5 {
-                finalPoint = CGPoint(x: buttpn.center.x - toVC.view.bounds.width, y: buttpn.center.y - toVC.view.bounds.height + 30)
+            if button.frame.origin.y < toVC.view.bounds.height * 0.5 {
+                finalPoint = CGPoint(x: button.center.x - toVC.view.bounds.width, y: button.center.y - toVC.view.bounds.height + 30)
             } else {
-                finalPoint = CGPoint(x: buttpn.center.x - toVC.view.bounds.width, y: buttpn.center.y - 0)
+                finalPoint = CGPoint(x: button.center.x - toVC.view.bounds.width, y: button.center.y - 0)
             }
         }
         
         let radius = sqrt((finalPoint.x * finalPoint.x) + (finalPoint.y * finalPoint.y))
-        let startPath = UIBezierPath(ovalIn: buttpn.frame.insetBy(dx: -radius, dy: -radius))
+        let startPath = UIBezierPath(ovalIn: button.frame.insetBy(dx: -radius, dy: -radius))
+        let finalPath = UIBezierPath(ovalIn: button.frame)
         
         let maskLayer = CAShapeLayer()
         maskLayer.path = finalPath.cgPath
         fromVC.view.layer.mask = maskLayer
         
-        let pingAnimation = CABasicAnimation(keyPath: "path")
-        pingAnimation.fromValue = startPath.cgPath
-        pingAnimation.toValue = finalPath.cgPath
-        pingAnimation.duration = transitionDuration(using: transitionContext)
-        pingAnimation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
-        pingAnimation.delegate = self
-        maskLayer.add(pingAnimation, forKey: "pingInvert")
+        let animation = CABasicAnimation(keyPath: "path")
+        animation.fromValue = startPath.cgPath
+        animation.toValue = finalPath.cgPath
+        animation.duration = transitionDuration(using: transitionContext)
+        animation.timingFunction = CAMediaTimingFunction(name: .easeInEaseOut)
+        animation.delegate = self
+        maskLayer.add(animation, forKey: "pingInvert")
     }
     
     func animationDidStop(_ anim: CAAnimation, finished flag: Bool) {
