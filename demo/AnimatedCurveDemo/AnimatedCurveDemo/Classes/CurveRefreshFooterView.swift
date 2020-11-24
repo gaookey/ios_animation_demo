@@ -24,6 +24,7 @@ class CurveRefreshFooterView: UIView {
                 curveView.progress = progress
                 labelView.progress = progress
             }
+            alpha = progress
             
             let diff = associatedScrollView.contentOffset.y - (associatedScrollView.contentSize.height - associatedScrollView.bounds.height) - pullDistance + 10
             
@@ -60,7 +61,6 @@ class CurveRefreshFooterView: UIView {
     private var willEnd = false
     private var notTracking = false
     private var loading = false
-    
     
     init(view: UIScrollView, withNavigationBar: Bool) {
         super.init(frame: CGRect(x: (view.bounds.width - 200) * 0.5, y: view.bounds.height, width: 200, height: 100))
@@ -105,11 +105,9 @@ extension CurveRefreshFooterView {
         progress = 1
         UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseInOut) { [weak self] in
             if let weakSelf = self {
-                weakSelf.alpha = 0
                 weakSelf.associatedScrollView.contentInset = UIEdgeInsets(top: weakSelf.originOffset, left: 0, bottom: 0, right: 0)
             }
         } completion: { [weak self] (finish) in
-            self?.alpha = 1
             self?.willEnd = false
             self?.notTracking = false
             self?.loading = false

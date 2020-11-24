@@ -24,6 +24,7 @@ class CurveRefreshHeaderView: UIView {
                 curveView.progress = progress
                 labelView.progress = progress
             }
+            alpha = progress
             
             center = CGPoint(x: center.x, y: -abs(associatedScrollView.contentOffset.y + originOffset) * 0.5)
             
@@ -94,11 +95,9 @@ extension CurveRefreshHeaderView {
         progress = 1
         UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseInOut) { [weak self] in
             if let weakSelf = self {
-                weakSelf.alpha = 0
                 weakSelf.associatedScrollView.contentInset = UIEdgeInsets(top: weakSelf.originOffset + 0.1, left: 0, bottom: 0, right: 0)
             }
         } completion: { [weak self] (finish) in
-            self?.alpha = 1
             self?.willEnd = false
             self?.notTracking = false
             self?.loading = false

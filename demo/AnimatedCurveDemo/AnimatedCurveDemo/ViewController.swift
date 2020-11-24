@@ -25,7 +25,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
         view.backgroundColor = .systemGroupedBackground
         view.addSubview(tableView)
-        method()
+        
+        addRefresh()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -38,19 +39,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
-    private func method() {
+    private func addRefresh() {
         
         let headerView = CurveRefreshHeaderView(view: tableView, withNavigationBar: false)
         self.headerView = headerView
         headerView.refreshingHandler = {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 self.headerView?.stopRefreshing()
             }
         }
         
         let footerView = CurveRefreshFooterView(view: tableView, withNavigationBar: false)
         footerView.refreshingHandler = {
-            DispatchQueue.main.asyncAfter(deadline: .now() + 5) {
+            DispatchQueue.main.asyncAfter(deadline: .now() + 3) {
                 footerView.stopRefreshing()
             }
         }
