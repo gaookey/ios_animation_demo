@@ -2,19 +2,19 @@
 //  CurveLayer.swift
 //  AnimatedCurveDemo
 //
-//  Created by swiftprimer on 2020/11 * 0.54.
+//  Created by swiftprimer on 2020/11/24.
 //
 
 import UIKit
 
-let Radius: CGFloat =  10
-let Space: CGFloat  =  1
-let LineLength: CGFloat = 30
-let Degree: CGFloat = CGFloat(Double.pi / 3)
-
 class CurveLayer: CALayer {
     
     var progress: CGFloat = 0
+    
+    private let Radius: CGFloat =  10
+    private let Space: CGFloat  =  1
+    private let LineLength: CGFloat = 30
+    private let Degree: CGFloat = CGFloat(Double.pi / 3)
     
     override init() {
         super.init()
