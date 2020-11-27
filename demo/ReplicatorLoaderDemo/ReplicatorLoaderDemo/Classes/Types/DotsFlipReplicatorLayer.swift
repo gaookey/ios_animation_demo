@@ -31,7 +31,7 @@ struct DotsFlipReplicatorLayer: Replicatable {
             
             replicatorLayer.instanceDelay = 0.1
             replicatorLayer.instanceCount = 3
-            replicatorLayer.instanceTransform = CATransform3DMakeTranslation(marginBetweenDot+dotSize, 0, 0)
+            replicatorLayer.instanceTransform = CATransform3DMakeTranslation(marginBetweenDot + dotSize, 0, 0)
             
             replicatorLayer.addSublayer(dot)
             layer.addSublayer(replicatorLayer)

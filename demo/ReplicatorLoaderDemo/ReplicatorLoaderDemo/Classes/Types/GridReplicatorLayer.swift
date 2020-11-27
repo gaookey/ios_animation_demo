@@ -34,7 +34,7 @@ struct GridReplicatorLayer: Replicatable {
             replicatorLayerX.instanceCount = nbColumn
             
             var transform = CATransform3DIdentity
-            transform = CATransform3DTranslate(transform, dotSize+marginBetweenDot, 0, 0)
+            transform = CATransform3DTranslate(transform, dotSize + marginBetweenDot, 0, 0)
             replicatorLayerX.instanceTransform = transform
             transform = CATransform3DScale(transform, 1, -1, 0)
             
@@ -44,7 +44,7 @@ struct GridReplicatorLayer: Replicatable {
             replicatorLayerY.instanceCount = nbColumn
             
             var transformY = CATransform3DIdentity
-            transformY = CATransform3DTranslate(transformY, 0, dotSize+marginBetweenDot, 0)
+            transformY = CATransform3DTranslate(transformY, 0, dotSize + marginBetweenDot, 0)
             replicatorLayerY.instanceTransform = transformY
             
             replicatorLayerX.addSublayer(dot)
