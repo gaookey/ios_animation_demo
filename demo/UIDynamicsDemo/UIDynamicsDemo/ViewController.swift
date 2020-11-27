@@ -30,6 +30,7 @@ class ViewController: UIViewController {
     private var pushBehavior: UIPushBehavior!//推动行为
     private var attachmentBehaviour: UIAttachmentBehavior! //吸附行为
     private var itemBehaviour: UIDynamicItemBehavior!
+    //UISnapBehavior
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -103,6 +104,13 @@ extension ViewController {
             animator.removeBehavior(gravityBehaviour)
             attachmentBehaviour = UIAttachmentBehavior(item: lockScreenView, attachedToAnchor: location)
             animator.addBehavior(attachmentBehaviour)
+            
+            //两个点之间的距离
+            //attachmentBehaviour.length
+            //阻尼系数（0-1，默认0）
+            //attachmentBehaviour.damping
+            //弹性系数（值越大 item 的弹性效果就越明显）
+            //attachmentBehaviour.frequency
         } else if pan.state == .changed {
             attachmentBehaviour.anchorPoint = location
         } else if pan.state == .ended {
