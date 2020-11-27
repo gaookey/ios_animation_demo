@@ -1,0 +1,354 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		91E2A9412570CD3A0018D07D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2A9402570CD3A0018D07D /* AppDelegate.swift */; };
+		91E2A9432570CD3B0018D07D /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2A9422570CD3B0018D07D /* SceneDelegate.swift */; };
+		91E2A9452570CD3B0018D07D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2A9442570CD3B0018D07D /* ViewController.swift */; };
+		91E2A9482570CD3B0018D07D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E2A9462570CD3B0018D07D /* Main.storyboard */; };
+		91E2A94A2570CD3B0018D07D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 91E2A9492570CD3B0018D07D /* Assets.xcassets */; };
+		91E2A94D2570CD3B0018D07D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 91E2A94B2570CD3B0018D07D /* LaunchScreen.storyboard */; };
+		91E2A9562570CD540018D07D /* FireworksView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2A9552570CD540018D07D /* FireworksView.swift */; };
+		91E2A9592570CD620018D07D /* FireworksButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 91E2A9582570CD620018D07D /* FireworksButton.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		91E2A93D2570CD3A0018D07D /* FireworksButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FireworksButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		91E2A9402570CD3A0018D07D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		91E2A9422570CD3B0018D07D /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		91E2A9442570CD3B0018D07D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		91E2A9472570CD3B0018D07D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		91E2A9492570CD3B0018D07D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		91E2A94C2570CD3B0018D07D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		91E2A94E2570CD3B0018D07D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		91E2A9552570CD540018D07D /* FireworksView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireworksView.swift; sourceTree = "<group>"; };
+		91E2A9582570CD620018D07D /* FireworksButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FireworksButton.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		91E2A93A2570CD3A0018D07D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		91E2A9342570CD3A0018D07D = {
+			isa = PBXGroup;
+			children = (
+				91E2A93F2570CD3A0018D07D /* FireworksButton */,
+				91E2A93E2570CD3A0018D07D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		91E2A93E2570CD3A0018D07D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				91E2A93D2570CD3A0018D07D /* FireworksButton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		91E2A93F2570CD3A0018D07D /* FireworksButton */ = {
+			isa = PBXGroup;
+			children = (
+				91E2A9402570CD3A0018D07D /* AppDelegate.swift */,
+				91E2A9422570CD3B0018D07D /* SceneDelegate.swift */,
+				91E2A9442570CD3B0018D07D /* ViewController.swift */,
+				91E2A9552570CD540018D07D /* FireworksView.swift */,
+				91E2A9582570CD620018D07D /* FireworksButton.swift */,
+				91E2A9462570CD3B0018D07D /* Main.storyboard */,
+				91E2A9492570CD3B0018D07D /* Assets.xcassets */,
+				91E2A94B2570CD3B0018D07D /* LaunchScreen.storyboard */,
+				91E2A94E2570CD3B0018D07D /* Info.plist */,
+			);
+			path = FireworksButton;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		91E2A93C2570CD3A0018D07D /* FireworksButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 91E2A9512570CD3B0018D07D /* Build configuration list for PBXNativeTarget "FireworksButton" */;
+			buildPhases = (
+				91E2A9392570CD3A0018D07D /* Sources */,
+				91E2A93A2570CD3A0018D07D /* Frameworks */,
+				91E2A93B2570CD3A0018D07D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FireworksButton;
+			productName = FireworksButton;
+			productReference = 91E2A93D2570CD3A0018D07D /* FireworksButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		91E2A9352570CD3A0018D07D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					91E2A93C2570CD3A0018D07D = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 91E2A9382570CD3A0018D07D /* Build configuration list for PBXProject "FireworksButton" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 91E2A9342570CD3A0018D07D;
+			productRefGroup = 91E2A93E2570CD3A0018D07D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				91E2A93C2570CD3A0018D07D /* FireworksButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		91E2A93B2570CD3A0018D07D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91E2A94D2570CD3B0018D07D /* LaunchScreen.storyboard in Resources */,
+				91E2A94A2570CD3B0018D07D /* Assets.xcassets in Resources */,
+				91E2A9482570CD3B0018D07D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		91E2A9392570CD3A0018D07D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				91E2A9452570CD3B0018D07D /* ViewController.swift in Sources */,
+				91E2A9412570CD3A0018D07D /* AppDelegate.swift in Sources */,
+				91E2A9432570CD3B0018D07D /* SceneDelegate.swift in Sources */,
+				91E2A9592570CD620018D07D /* FireworksButton.swift in Sources */,
+				91E2A9562570CD540018D07D /* FireworksView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		91E2A9462570CD3B0018D07D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91E2A9472570CD3B0018D07D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		91E2A94B2570CD3B0018D07D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				91E2A94C2570CD3B0018D07D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		91E2A94F2570CD3B0018D07D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		91E2A9502570CD3B0018D07D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		91E2A9522570CD3B0018D07D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BBZXT2966T;
+				INFOPLIST_FILE = FireworksButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftprimer.FireworksButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		91E2A9532570CD3B0018D07D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BBZXT2966T;
+				INFOPLIST_FILE = FireworksButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.swiftprimer.FireworksButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		91E2A9382570CD3A0018D07D /* Build configuration list for PBXProject "FireworksButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91E2A94F2570CD3B0018D07D /* Debug */,
+				91E2A9502570CD3B0018D07D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		91E2A9512570CD3B0018D07D /* Build configuration list for PBXNativeTarget "FireworksButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				91E2A9522570CD3B0018D07D /* Debug */,
+				91E2A9532570CD3B0018D07D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 91E2A9352570CD3A0018D07D /* Project object */;
+}
