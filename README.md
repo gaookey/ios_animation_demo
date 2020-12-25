@@ -3,13 +3,14 @@
 iOS 动画 demo
 
 
-
 摘抄至：《A GUIDE TO IOS ANIMATION 2.0》
 
 
 
 原代码地址：[A-GUIDE-TO-iOS-ANIMATION](https://github.com/KittenYang/A-GUIDE-TO-iOS-ANIMATION)
 
+
+简书：[《A GUIDE TO IOS ANIMATION 2.0》代码实践](https://www.jianshu.com/p/2c3e799f40a2)
 
 
 ##### 代码样式
